@@ -7,7 +7,6 @@ import {
 } from "@/components/ui/sheet";
 import { VisuallyHidden } from "@radix-ui/react-visually-hidden";
 import { Menu } from "lucide-react";
-import { Logo } from "@/components/logo";
 import { NavMenu } from "@/components/nav-menu";
 
 export const NavigationSheet = () => {
@@ -22,8 +21,19 @@ export const NavigationSheet = () => {
           <Menu />
         </Button>
       </SheetTrigger>
-      <SheetContent className="px-6 py-3">
-        <Logo />
+      <SheetContent
+        className="p-3 w-1/2 h-55 mt-6 mr-5"
+        style={{ borderRadius: "12px" }}
+      >
+        <div className="flex items-center gap-1">
+          <div className="flex items-center justify-center size-9 rounded text-primary">
+            <span className="material-symbols-outlined text-2xl">hub</span>
+          </div>
+
+          <span className="text-xl font-black tracking-tighter text-slate-900 leading-none">
+            DELYN
+          </span>
+        </div>
         <NavMenu orientation="vertical" className="mt-6 [&>div]:h-full" />
       </SheetContent>
     </Sheet>
