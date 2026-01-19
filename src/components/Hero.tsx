@@ -31,11 +31,11 @@ export default function Hero() {
           </Button>
         </div>
       </div>
-      <div className="w-full z-10 max-w-(--breakpoint-xl) mx-auto aspect-video bg-accent rounded-xl">
+      <div className="w-full z-20 max-w-(--breakpoint-lg) mx-auto aspect-video md:aspect-auto bg-accent p-5 md:p-40 rounded-full">
         <img
           src="/screen.png"
           alt=""
-          className="w-full h-full object-contain"
+          className="w-full h-full rounded-xl object-contain"
         />
       </div>
     </div>

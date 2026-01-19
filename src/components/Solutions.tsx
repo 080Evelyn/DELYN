@@ -43,7 +43,7 @@ const Solutions: React.FC = () => {
   };
 
   return (
-    <section className="py-24 bg-white dark:bg-background-dark" id="solutions">
+    <section className="py-24 bg-white" id="solutions">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -52,10 +52,10 @@ const Solutions: React.FC = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-20"
         >
-          <h2 className="text-4xl md:text-5xl font-black text-slate-900 dark:text-white tracking-tight mb-6">
+          <h2 className="text-4xl font-bold text-foreground tracking-tight mb-6">
             Solve Core Operational Friction
           </h2>
-          <p className="text-xl text-slate-600 dark:text-slate-300 max-w-3xl mx-auto font-medium">
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto font-medium">
             Manual workflows are the silent killers of growth. DELYN replaces
             fragmented spreadsheets with an intelligent, unified command center.
           </p>
@@ -71,10 +71,10 @@ const Solutions: React.FC = () => {
             <motion.div
               key={i}
               variants={itemVariants}
-              className="bg-slate-50 dark:bg-slate-800/40 p-10 rounded-2xl border border-slate-100 dark:border-slate-700/50 hover:border-primary/30 transition-colors group"
+              className="group bg-slate-50 dark:bg-slate-800/40 p-10 rounded-2xl border border-slate-100 dark:border-slate-700/50 hover:border-primary/30 transition-colors group"
             >
               <div
-                className={`size-14 rounded-xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform ${
+                className={`size-14 group-hover:animate-bounce group-hover:rotate-10 rounded-xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform ${
                   f.color === "red"
                     ? "bg-red-500/10 text-red-500"
                     : f.color === "purple"
@@ -86,10 +86,10 @@ const Solutions: React.FC = () => {
                   {f.icon}
                 </span>
               </div>
-              <h3 className="text-2xl font-black text-slate-900 dark:text-white mb-4 tracking-tight">
+              <h3 className="text-2xl font-bold text-foreground mb-4 tracking-tight">
                 {f.title}
               </h3>
-              <p className="text-slate-600 dark:text-slate-400 leading-relaxed text-lg">
+              <p className="text-muted-foreground leading-relaxed text-lg">
                 {f.desc}
               </p>
             </motion.div>

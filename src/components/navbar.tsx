@@ -4,7 +4,7 @@ import { NavigationSheet } from "@/components/navigation-sheet";
 
 const Navbar = () => {
   return (
-    <nav className="fixed top-6 inset-x-4 h-16 z-50 backdrop-blur-md bg-white/40 border max-w-(--breakpoint-xl) mx-auto rounded-full">
+    <nav className="fixed top-6 inset-x-4 h-16 z-50 backdrop-blur-md bg-foreground/5 border max-w-(--breakpoint-xl) md:w-[90%] mx-auto rounded-full">
       <div className="h-full flex items-center justify-between mx-auto px-4">
         <div className="flex items-center gap-1">
           <div className="flex items-center justify-center size-9 rounded text-primary">

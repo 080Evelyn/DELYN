@@ -12,12 +12,12 @@ export const BackgroundPattern = () => {
         cy={1}
         cr={1}
         className={cn(
-          "mask-[radial-gradient(ellipse,rgba(0,0,0,0.3)_30%,black_50%)]",
+          "mask-[radial-gradient(ellipse,rgba(0,0,0,0.3)_30%,black_50%)] max-w-[1536px] mx-auto",
           "dark:fill-slate-700",
         )}
       />
       <Particles
-        className="absolute inset-0 overflow-x-hidden"
+        className="absolute inset-0 overflow-x-hidden max-w-[1536px] mx-auto"
         quantity={100}
         ease={80}
         color="#000"
