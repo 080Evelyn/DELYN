@@ -9,6 +9,7 @@ import CTA from "./components/CTA";
 import Footer from "./components/Footer";
 import Navbar from "./components/navbar";
 import { FloatingWhatsApp } from "react-floating-whatsapp";
+import Testimonials from "./components/testimonials";
 
 const App: React.FC = () => {
   return (
@@ -23,11 +24,12 @@ const App: React.FC = () => {
         <WhiteLabel />
         <Operators />
         <CTA />
+        <Testimonials />
       </main>
       <Footer />
 
       <FloatingWhatsApp
-        phoneNumber="+2348029747491"
+        phoneNumber="+2349059296155"
         accountName="Delyn"
         avatar="/logo.png"
         statusMessage="online"

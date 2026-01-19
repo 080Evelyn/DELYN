@@ -20,6 +20,11 @@ export const NavMenu = (props: ComponentProps<typeof NavigationMenu>) => (
           <a href="#white-label">White-Label</a>
         </NavigationMenuLink>
       </NavigationMenuItem>
+      <NavigationMenuItem>
+        <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
+          <a href="#testimonials">Testimonials</a>
+        </NavigationMenuLink>
+      </NavigationMenuItem>
     </NavigationMenuList>
   </NavigationMenu>
 );

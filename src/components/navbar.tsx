@@ -1,6 +1,11 @@
-import { Button } from "@/components/ui/button";
 import { NavMenu } from "@/components/nav-menu";
 import { NavigationSheet } from "@/components/navigation-sheet";
+import {
+  CraftButton,
+  CraftButtonIcon,
+  CraftButtonLabel,
+} from "./ui/craft-button";
+import { ArrowUpRightIcon } from "lucide-react";
 
 const Navbar = () => {
   return (
@@ -18,7 +23,12 @@ const Navbar = () => {
         {/* Desktop Menu */}
         <NavMenu className="hidden md:block" />
         <div className="flex items-center gap-3">
-          <Button className="rounded-full">Request a Demo</Button>
+          <CraftButton>
+            <CraftButtonLabel>Request a Demo</CraftButtonLabel>
+            <CraftButtonIcon>
+              <ArrowUpRightIcon className="size-3 stroke-2 transition-transform duration-500 group-hover:rotate-45" />
+            </CraftButtonIcon>
+          </CraftButton>
 
           {/* Mobile Menu */}
           <div className="md:hidden">
