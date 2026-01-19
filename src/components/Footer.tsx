@@ -4,8 +4,8 @@ const Footer: React.FC = () => {
   return (
     <footer className="bg-white dark:bg-background-dark border-t border-slate-200 dark:border-slate-800 pt-20 pb-10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-12 mb-16">
-          <div className="col-span-2 lg:col-span-2">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16">
+          <div>
             <div className="flex items-center gap-3 mb-6">
               <div className="flex items-center justify-center size-8 rounded bg-primary/10 text-primary">
                 <span className="material-symbols-outlined text-xl">hub</span>
@@ -15,8 +15,8 @@ const Footer: React.FC = () => {
               </span>
             </div>
             <p className="text-slate-500 dark:text-slate-400 text-base max-w-xs mb-8 leading-relaxed">
-              The ultimate white-label operational engine. Engineered by Lynog
-              Tech to scale your vision.
+              Digitizing and Simplifying Internal Business Operations. Powered
+              by Lynog Tech Nig Ltd.
             </p>
             <div className="flex gap-5">
               <a
@@ -53,55 +53,17 @@ const Footer: React.FC = () => {
           </div>
           <div>
             <h3 className="text-sm font-black text-slate-900 dark:text-white uppercase tracking-[0.2em] mb-6">
-              Solution
+              Contact
             </h3>
             <ul className="space-y-4 text-sm font-semibold text-slate-500 dark:text-slate-400">
               <li>
-                <a className="hover:text-primary transition-colors" href="#">
-                  Inventory Control
-                </a>
+                <span className="block">Email: office@lynogtech.com.ng</span>
               </li>
               <li>
-                <a className="hover:text-primary transition-colors" href="#">
-                  Staff Portal
-                </a>
+                <span className="block">Phone: 09033113048</span>
               </li>
               <li>
-                <a className="hover:text-primary transition-colors" href="#">
-                  Fleet Hub
-                </a>
-              </li>
-              <li>
-                <a className="hover:text-primary transition-colors" href="#">
-                  API Docs
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <h3 className="text-sm font-black text-slate-900 dark:text-white uppercase tracking-[0.2em] mb-6">
-              Partners
-            </h3>
-            <ul className="space-y-4 text-sm font-semibold text-slate-500 dark:text-slate-400">
-              <li>
-                <a className="hover:text-primary transition-colors" href="#">
-                  White-Label Program
-                </a>
-              </li>
-              <li>
-                <a className="hover:text-primary transition-colors" href="#">
-                  Affiliates
-                </a>
-              </li>
-              <li>
-                <a className="hover:text-primary transition-colors" href="#">
-                  Case Studies
-                </a>
-              </li>
-              <li>
-                <a className="hover:text-primary transition-colors" href="#">
-                  Contact Support
-                </a>
+                <span className="block">Address: Lagos, Nigeria</span>
               </li>
             </ul>
           </div>
