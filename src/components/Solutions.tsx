@@ -2,24 +2,36 @@ import React from "react";
 import { motion, type Variants } from "motion/react";
 
 const Solutions: React.FC = () => {
-  const frictions = [
+  const problems = [
     {
       icon: "inventory_2",
-      title: "Inventory Shrinkage",
-      desc: 'Eliminate the "lost stock" mystery. Automated tracking reduces inventory variance by up to 35% within 90 days of implementation.',
+      title: "Poor inventory tracking",
+      desc: "Inaccurate stock levels leading to overstocking or stockouts, causing financial losses and operational disruptions.",
       color: "red",
     },
     {
-      icon: "route",
-      title: "Delivery Delays",
-      desc: "AI-driven route optimization ensures your fleet is never idle. Cut average delivery times by 22% and fuel costs by 15%.",
+      icon: "group",
+      title: "Manual staff approvals",
+      desc: "Time-consuming manual processes for staff management and approvals, slowing down operations and increasing errors.",
+      color: "purple",
+    },
+    {
+      icon: "local_shipping",
+      title: "Disorganized delivery management",
+      desc: "Lack of coordination in delivery schedules and tracking, resulting in delays and customer dissatisfaction.",
       color: "primary",
     },
     {
-      icon: "engineering",
-      title: "Labor Inefficiency",
-      desc: "Gain objective visibility into shift performance. Align your workforce with real-time demand rather than guesswork.",
-      color: "purple",
+      icon: "visibility",
+      title: "Lack of operational transparency",
+      desc: "No real-time visibility into business operations, making it difficult to make informed decisions.",
+      color: "blue",
+    },
+    {
+      icon: "plug_connect",
+      title: "Fragmented internal tools",
+      desc: "Multiple disconnected systems causing inefficiencies, data silos, and increased administrative burden.",
+      color: "green",
     },
   ];
 
@@ -53,11 +65,12 @@ const Solutions: React.FC = () => {
           className="text-center mb-20"
         >
           <h2 className="text-4xl font-bold text-foreground tracking-tight mb-6">
-            Solve Core Operational Friction
+            Core Problems We Solve
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto font-medium">
-            Manual workflows are the silent killers of growth. DELYN replaces
-            fragmented spreadsheets with an intelligent, unified command center.
+            Our Business Operations Management System addresses these critical
+            challenges to help businesses manage their internal operations
+            efficiently.
           </p>
         </motion.div>
         <motion.div
@@ -65,13 +78,13 @@ const Solutions: React.FC = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-50px" }}
-          className="grid md:grid-cols-3 gap-10"
+          className="flex flex-wrap justify-center gap-10"
         >
-          {frictions.map((f, i) => (
+          {problems.map((f, i) => (
             <motion.div
               key={i}
               variants={itemVariants}
-              className="group bg-slate-50 dark:bg-slate-800/40 p-10 rounded-2xl border border-slate-100 dark:border-slate-700/50 hover:border-primary/30 transition-colors group"
+              className="w-full md:w-[calc(50%-2.5rem)] lg:w-[calc(33.333%-2.5rem)] group bg-background/50  p-10 rounded-2xl border border-slate-100  hover:border-primary/30 transition-colors"
             >
               <div
                 className={`size-14 group-hover:animate-bounce group-hover:rotate-10 rounded-xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform ${

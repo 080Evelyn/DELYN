@@ -4,7 +4,7 @@ const Footer: React.FC = () => {
   return (
     <footer className="bg-white dark:bg-background-dark border-t border-slate-200 dark:border-slate-800 pt-20 pb-10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-12 mb-16">
+        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-12 mb-16">
           <div className="col-span-2 lg:col-span-2">
             <div className="flex items-center gap-3 mb-6">
               <div className="flex items-center justify-center size-8 rounded bg-primary/10 text-primary">
@@ -105,32 +105,13 @@ const Footer: React.FC = () => {
               </li>
             </ul>
           </div>
-          <div>
-            <h3 className="text-sm font-black text-slate-900 dark:text-white uppercase tracking-[0.2em] mb-6">
-              Legal
-            </h3>
-            <ul className="space-y-4 text-sm font-semibold text-slate-500 dark:text-slate-400">
-              <li>
-                <a className="hover:text-primary transition-colors" href="#">
-                  Privacy Policy
-                </a>
-              </li>
-              <li>
-                <a className="hover:text-primary transition-colors" href="#">
-                  Terms of Use
-                </a>
-              </li>
-              <li>
-                <a className="hover:text-primary transition-colors" href="#">
-                  SLA Agreement
-                </a>
-              </li>
-            </ul>
-          </div>
         </div>
-        <div className="border-t border-slate-100 dark:border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-6">
-          <p className="text-sm font-bold text-slate-400 dark:text-slate-500 tracking-tight">
-            © 2026 Lynog Tech Inc. Proudly powering DELYN.
+        <div className="border-t border-slate-100 dark:border-slate-800 pt-8 flex flex-col items-center gap-6">
+          <p className="text-sm font-bold text-foreground dark:text-slate-500 tracking-tight">
+            &copy; {new Date().getFullYear()} DELYN.
+          </p>
+          <p className="text-xs font-bold text-slate-400">
+            Proudly powered by Lynog Tech NIG LTD.{" "}
           </p>
         </div>
       </div>
