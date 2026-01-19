@@ -57,10 +57,14 @@ const Footer: React.FC = () => {
             </h3>
             <ul className="space-y-4 text-sm font-semibold text-slate-500 dark:text-slate-400">
               <li>
-                <span className="block">Email: office@lynogtech.com.ng</span>
+                <a className="block" href="mailto:office@lynogtech.com.ng">
+                  Email: office@lynogtech.com.ng
+                </a>
               </li>
               <li>
-                <span className="block">Phone: 09033113048</span>
+                <a className="block" href="tel:09033113048">
+                  Phone: 09033113048
+                </a>
               </li>
               <li>
                 <span className="block">Address: Lagos, Nigeria</span>

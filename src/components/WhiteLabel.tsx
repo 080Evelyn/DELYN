@@ -12,7 +12,7 @@ const WhiteLabel: React.FC = () => {
   return (
     <section
       className="py-32 bg-primary/5 relative overflow-hidden"
-      id="whitelabel"
+      id="white-label"
     >
       <div className="absolute -top-48 -right-48 size-150 bg-primary/10 rounded-full blur-[120px] pointer-events-none"></div>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
