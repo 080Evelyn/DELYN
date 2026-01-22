@@ -12,9 +12,7 @@ const Navbar = () => {
     <nav className="fixed top-6 inset-x-4 h-16 z-50 backdrop-blur-md bg-foreground/5 border max-w-(--breakpoint-xl) md:w-[90%] mx-auto rounded-full">
       <div className="h-full flex items-center justify-between mx-auto px-4">
         <div className="flex items-center gap-1">
-          <div className="flex items-center justify-center size-9 rounded text-primary">
-            <span className="material-symbols-outlined text-2xl">hub</span>
-          </div>
+          <img src="./logo.png" alt="logo icon" />
 
           <span className="text-xl font-black tracking-tighter text-slate-900 leading-none">
             DELYN
