@@ -12,9 +12,9 @@ const WhiteLabel: React.FC = () => {
   return (
     <section
       className="py-32 bg-primary/5 relative overflow-hidden"
-      id="whitelabel"
+      id="white-label"
     >
-      <div className="absolute -top-48 -right-48 size-[600px] bg-primary/10 rounded-full blur-[120px] pointer-events-none"></div>
+      <div className="absolute -top-48 -right-48 size-150 bg-primary/10 rounded-full blur-[120px] pointer-events-none"></div>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="flex flex-col lg:flex-row items-center gap-20">
           <motion.div
@@ -44,7 +44,8 @@ const WhiteLabel: React.FC = () => {
                         Your Identity
                       </p>
                       <p className="text-slate-500 dark:text-slate-400 text-sm">
-                        Upload your logo to rebrand the entire UI
+                        Upload your logo to rebrand the entire UI. It is that
+                        easy
                       </p>
                     </div>
                     <div className="flex gap-3">
@@ -66,12 +67,12 @@ const WhiteLabel: React.FC = () => {
             className="lg:w-1/2 order-1 lg:order-2"
           >
             <h2 className="text-4xl md:text-5xl font-black text-slate-900 dark:text-white mb-8 tracking-tight">
-              Your Identity. Our Infrastructure.
+              Fully Branded Solutions
             </h2>
             <p className="text-xl text-slate-600 dark:text-slate-300 mb-10 leading-relaxed font-medium">
-              DELYN is architected for total invisibility. Our white-label
-              framework allows you to deploy a state-of-the-art SaaS platform
-              under your own brand in minutes.
+              Your business gets a fully branded version of the system under
+              your company name. The software is licensed per business and
+              customized with your branding.
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
               {capabilities.map((c, i) => (

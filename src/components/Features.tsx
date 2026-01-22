@@ -5,23 +5,28 @@ const Features: React.FC = () => {
   const features = [
     {
       icon: "warehouse",
-      title: "Smart Inventory",
-      desc: "Predictive stock levels and automated procurement based on historical data.",
+      title: "Inventory & stock management",
+      desc: "Comprehensive tracking and management of inventory levels to ensure optimal stock availability.",
     },
     {
       icon: "badge",
-      title: "HR Engine",
-      desc: "Comprehensive staff monitoring with biometric integration and payroll automation.",
+      title: "Staff roles and approval workflows",
+      desc: "Define roles and streamline approval processes for staff management and operations.",
     },
     {
       icon: "account_balance",
-      title: "Accounting",
-      desc: "Enterprise-grade financial reporting with real-time tax and expense tracking.",
+      title: "Controlled accounting access",
+      desc: "Secure and controlled access to accounting functions to maintain financial integrity.",
     },
     {
       icon: "local_shipping",
-      title: "Fleet Matrix",
-      desc: "GPS tracking, maintenance logs, and electronic Proof of Delivery (ePOD).",
+      title: "Rider & delivery management",
+      desc: "Efficient management of delivery personnel and logistics to ensure timely deliveries.",
+    },
+    {
+      icon: "notifications",
+      title: "Internal notifications and alerts",
+      desc: "Real-time notifications and alerts to keep teams informed of important updates and events.",
     },
   ];
 
@@ -41,7 +46,7 @@ const Features: React.FC = () => {
   };
 
   return (
-    <section className="py-24 bg-slate-50 dark:bg-[#0d161b]" id="features">
+    <section className="py-24 bg-slate-50" id="features">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
           <motion.div
@@ -53,28 +58,17 @@ const Features: React.FC = () => {
             <span className="text-primary font-black tracking-[0.2em] text-sm uppercase">
               The DELYN Ecosystem
             </span>
-            <h2 className="text-4xl md:text-5xl font-black text-slate-900 dark:text-white mt-4 tracking-tight">
+            <h2 className="text-4xl lg:text-5xl font-bold text-slate-900 dark:text-white mt-4 tracking-tight">
               Uncompromising Power.
             </h2>
           </motion.div>
-          <motion.button
-            initial={{ opacity: 0, scale: 0.9 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true }}
-            className="bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 px-6 py-3 rounded-lg text-primary font-bold flex items-center gap-2 hover:bg-primary hover:text-white transition-all shadow-sm"
-          >
-            Full Capabilities{" "}
-            <span className="material-symbols-outlined text-lg">
-              arrow_forward
-            </span>
-          </motion.button>
         </div>
         <motion.div
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-50px" }}
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"
+          className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-8"
         >
           {features.map((feature, i) => (
             <motion.div

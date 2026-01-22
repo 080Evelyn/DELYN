@@ -1,5 +1,10 @@
 import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
+import {
+  CraftButton,
+  CraftButtonIcon,
+  CraftButtonLabel,
+} from "./ui/craft-button";
+import { ArrowUpRightIcon } from "lucide-react";
 import { ArrowUpRight } from "lucide-react";
 import { BackgroundPattern } from "./background-pattern";
 
@@ -14,7 +19,7 @@ export default function Hero() {
           asChild
         >
           <div>
-            Just released v1.0.0 <ArrowUpRight className="ml-1 size-4" />
+            Meet Delyn <ArrowUpRight className="ml-1 size-4" />
           </div>
         </Badge>
         <h1 className="mt-6 text-4xl sm:text-5xl md:text-6xl lg:text-7xl md:leading-[1.2] font-semibold tracking-tighter">
@@ -26,16 +31,19 @@ export default function Hero() {
           goals. Stop managing chaos. Start scaling operations with Delyn.
         </p>
         <div className="mt-10 flex items-center justify-center gap-4">
-          <Button size="lg" className="rounded-full text-base">
-            Request a Demo <ArrowUpRight className="h-5! w-5!" />
-          </Button>
+          <CraftButton size={"lg"} className="py-6">
+            <CraftButtonLabel>Request a Demo</CraftButtonLabel>
+            <CraftButtonIcon>
+              <ArrowUpRightIcon className="size-3 stroke-2 transition-transform duration-500 group-hover:rotate-45" />
+            </CraftButtonIcon>
+          </CraftButton>
         </div>
       </div>
-      <div className="w-full z-10 max-w-(--breakpoint-xl) mx-auto aspect-video bg-accent rounded-xl">
+      <div className="w-full z-20 max-w-(--breakpoint-lg) mx-auto aspect-video md:aspect-auto bg-accent p-5 md:p-40 rounded-full">
         <img
           src="/screen.png"
           alt=""
-          className="w-full h-full object-contain"
+          className="w-full h-full rounded-xl object-contain"
         />
       </div>
     </div>

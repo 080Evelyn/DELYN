@@ -4,6 +4,10 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
+  max-width: 1536px;
+  margin: 0 auto;
+  scroll-behavior: smooth;
+  --radius: 0.625rem;
   --background: oklch(0.96 0.01 271.34);
   --foreground: oklch(0.21 0.03 263.61);
   --card: oklch(0.98 0.01 271.41);
