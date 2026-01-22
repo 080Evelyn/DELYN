@@ -1,8 +1,6 @@
 import React from "react";
 import Hero from "./components/Hero";
-// import Partners from "./components/Partners";
 import Solutions from "./components/Solutions";
-// import Features from "./components/Features";
 import WhiteLabel from "./components/WhiteLabel";
 import Operators from "./components/Operators";
 import CTA from "./components/CTA";
@@ -17,9 +15,7 @@ const App: React.FC = () => {
       <Navbar />
       <main className="grow mt-20">
         <Hero />
-        {/* <Partners /> */}
         <Solutions />
-        {/* <Features /> */}
 
         <WhiteLabel />
         <Operators />
