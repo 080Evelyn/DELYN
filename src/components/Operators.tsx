@@ -12,7 +12,7 @@ const Operators: React.FC = () => {
           transition={{ duration: 0.6 }}
           className="text-4xl font-bold text-slate-900 dark:text-white mb-16 tracking-tight"
         >
-          Who Needs DELYN?
+          Who DELYN Is Built For
         </motion.h2>
 
         {/* Bento grid */}
@@ -116,11 +116,12 @@ const Operators: React.FC = () => {
               </span>
             </div>
             <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-4">
-              Businesses managing inventory, staff, and deliveries
+              Businesses replacing fragmented internal tools
             </h3>
             <p className="text-slate-600 dark:text-slate-400 leading-relaxed">
-              Comprehensive solution for managing inventory, staff, and delivery
-              operations.
+              Ideal for companies tired of juggling multiple systems and ready
+              to run inventory, people, communication, and deliveries from one
+              platform they fully own.
             </p>
           </motion.div>
         </div>
