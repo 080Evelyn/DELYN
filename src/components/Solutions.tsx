@@ -5,13 +5,13 @@ const Solutions: React.FC = () => {
   const problems = [
     {
       icon: "inventory_2",
-      title: "Poor inventory tracking",
+      title: "Unreliable inventory tracking",
       desc: "Inaccurate stock levels leading to overstocking or stockouts, causing financial losses and operational disruptions.",
       color: "red",
     },
     {
       icon: "group",
-      title: "Manual staff approvals",
+      title: "Manual staff and rider workflows",
       desc: "Time-consuming manual processes for staff management and approvals, slowing down operations and increasing errors.",
       color: "purple",
     },
@@ -29,8 +29,8 @@ const Solutions: React.FC = () => {
     },
     {
       icon: "plug_connect",
-      title: "Fragmented internal tools",
-      desc: "Multiple disconnected systems causing inefficiencies, data silos, and increased administrative burden.",
+      title: "Too many disconnected tools",
+      desc: "Relying on multiple systems for inventory, communication, and delivery creates inefficiencies, data silos, and operational chaos.",
       color: "green",
     },
   ];
@@ -65,12 +65,12 @@ const Solutions: React.FC = () => {
           className="text-center mb-20"
         >
           <h2 className="text-4xl font-bold text-foreground tracking-tight mb-6">
-            Core Problems We Solve
+            Problems That Slow Growing Businesses Down{" "}
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto font-medium">
-            Our Business Operations Management System addresses these critical
-            challenges to help businesses manage their internal operations
-            efficiently.
+            Delyn eliminates these operational bottlenecks by giving businesses
+            a single, ownable system to manage inventory, people, and deliveries
+            from one place.
           </p>
         </motion.div>
         <motion.div

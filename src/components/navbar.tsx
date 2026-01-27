@@ -21,7 +21,7 @@ const Navbar = () => {
         {/* Desktop Menu */}
         <NavMenu className="hidden md:block" />
         <div className="flex items-center gap-3">
-          <CraftButton>
+          <CraftButton className="max-md:hidden">
             <CraftButtonLabel>Request a Demo</CraftButtonLabel>
             <CraftButtonIcon>
               <ArrowUpRightIcon className="size-3 stroke-2 transition-transform duration-500 group-hover:rotate-45" />

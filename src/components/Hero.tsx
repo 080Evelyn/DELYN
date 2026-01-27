@@ -44,7 +44,8 @@ export default function Hero() {
             asChild
           >
             <div>
-              Meet Delyn <ArrowUpRight className="ml-1 size-4" />
+              Meet Delyn — Own Your Software
+              <ArrowUpRight className="ml-1 size-4" />
             </div>
           </Badge>
         </motion.div>
@@ -52,15 +53,16 @@ export default function Hero() {
           className="mt-6 text-4xl sm:text-5xl md:text-6xl lg:text-7xl md:leading-[1.2] font-semibold tracking-tighter"
           variants={itemVariants}
         >
-          Launch Your Branded Business Software
+          Launch Your Own Branded Business Software
         </motion.h1>
         <motion.p
           className="mt-6 md:text-lg text-foreground/80"
           variants={itemVariants}
         >
-          We build custom software for your business in your business name,
-          tailored to your specific needs and designed to help you achieve your
-          goals. Stop managing chaos. Start scaling operations with Delyn.
+          Delyn provides a ready-made web and mobile application you can fully
+          brand, customize, and run as your own product. Manage inventory,
+          merchants, riders, communication, and deliveries from one platform.
+          Stop managing chaos. Start scaling operations with Delyn.
         </motion.p>
         <motion.div
           className="mt-10 flex items-center justify-center gap-4"
